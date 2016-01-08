@@ -4,13 +4,257 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="fr">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="witdh=device_witdh, initial-scale=1">
+        
+        <meta name="description" content="Portfolio de Grégoire Fora - BTS SIO SLAM">
+        <meta name="author" content="Grégoire Fora">
+        <link rel="icon" href="favicon.ico">
+        <title>Portfolio de Grégoire Fora (BTS SIO 2016)</title>
+        
+        <link href="css/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>TODO write content</div>
-    </body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-controls="navbars">
+                        <span class="sr-only">Navigation raccourcie</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Mon Portfolio</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span> Accueil
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="cv.html">
+                                <span class="glyphicon glyphicon-object-align-top"></span> CV
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                <span class="glyphicon glyphicon-list-alt"></span> Réalisations
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">En autonomie</li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Application Android</a>
+                                </li>
+                                <li role="presentation"><a role="menuitem" href="#">Site web</a></li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Etudes et analyses</a>
+                                </li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">
+                                    En entreprise
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Projet de 1ère année</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Projet de 2ème année</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                <span class="glyphicon glyphicon-education"></span>
+                                Jury E4 BTS SIO <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">
+                                    Documentations contexte
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Présentation</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Application</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Missions à réaliser</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Annexes</a>
+                                </li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Fiches d'examen</li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Situation professionnelle n°1</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Situation professionnelle n°2</a>
+                                </li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Démonstrations</li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Démo SP n°1</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Démo SP n°2</a>
+                                </li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation" class="dropdown-header">Codes sources</li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Sources SP n°1</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" href="#">Sources SP n°2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-envelope"></span> Me contacter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row cadreCV">
+                    <div id="cv-entete" class="text-center">
+                        <div id="cv-photo">
+                            <img src="images/greg.jpg" alt="Ma photo d'identité" />
+                        </div>
+                        <div id="cv-intro">
+                            <h1>Bonjour, je m'appelle <span>Grégoire</span> et voici mon CV</h1>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="rubrique">
+                            <h2><span class="glyphicon glyphicon-comment"></span> En quelques mots...</h2>
+                            <p>J'ai 24 ans, j'habite à Bayonne et je suis passionné d'informatique et de
+                                nouvelles technologies depuis mon plus jeune âge. Je suis actuellement un
+                                BTS Services Informatiques aux Organisations ce qui m'a décidé à aller au
+                                delà de la passion, afin de faire de l'informatique et plus particulièrement
+                                du développement d'applications, mon métier !
+                            </p>
+                        </div>
+                        <div class="rubrique">
+                            <h2><span class="glyphicon glyphicon-education"></span> Parcours scolaire</h2>
+                            <ul id="parcours" class="clearfix">
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2016
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>BTS SIO option SLAM (en cours...)</h3>
+                                        <p>Brevet de Technicien Supérieur "Services Informatiques aux
+                                            Organisations", option "Solutions Logicielles et Applications
+                                            Métiers"
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2013
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>BTS Professions Immobilières (Niveau)</h3>
+                                        <p>Brevet de Technicien Supérieur "Professions Immobilières" (Niveau)
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="date pull-left">
+                                        <span class="glyphicon glyphicon-record"></span>&nbsp;2010
+                                    </div>
+                                    <div class="details pull-right">
+                                        <h3>Bac ES option Mathématiques</h3>
+                                        <p>Baccalauréat Economique et Social option Mathématiques
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rubrique">
+                            <h2><span class="glyphicon glyphicon-briefcase"></span>
+                                Expériences professionnelles
+                            </h2>
+                            <div class="experience clearfix">
+                                <div class="col-xs-3">
+                                    <div class="lieu">Fitness-Shop</div>
+                                    <div class="date"> 2015 (6sem.)</div>
+                                </div>
+                                <div class="col-xs-9">
+                                    <div class="profession">Développement Web</div>
+                                    <div class="details">Création d'un site web e-commerce,
+                                        avec création de commandes, respect de l'architecture MVC,
+                                        gestion des données
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="rubrique clearfix">
+                        <h2><span class="glyphicon glyphicon-user"></span> Me contacter</h2>
+                        <div class="meContacter">
+                            <div class="details pull-left">
+                                <a href="mailto:g.fora@hotmail.fr?subject=Contact depuis le CV en ligne" title="Mail de Grégoire Fora">
+                                    <img class="contact-icon" src="images/logo-outlook.jpg" alt="Icone de mail" /> Outlook.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="competences" class="rubrique">
+                        <h2><span class="glyphicon glyphicon-wrench"></span> Compétences</h2>
+                        <div class="container">
+                            <div class="libelle">Intégration web</div>
+                            <div class="classement classement5"></div>
+                        </div>
+                        <div class="container">
+                            <div class="libelle">Développement</div>
+                            <div class="classement classement4"></div>
+                        </div>
+                        <div class="container">
+                            <div class="libelle">Administration</div>
+                            <div class="classement classement3"></div>
+                        </div>
+                    </div>
+                    <div id="langues" class="rubrique">
+                        <h2><span class="glyphicon glyphicon-flag"></span> Langue</h2>
+                        <div class="container">
+                            <div class="langue">Français</div>
+                            <div class="niveau">
+                                <span class="label label-default">A1</span>
+                                <span class="label label-default">A2</span>
+                                <span class="label label-default">B1</span>
+                                <span class="label label-default">B2</span>
+                                <span class="label label-default">C1</span>
+                                <span class="label label-success">C3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rubrique">
+                        <h2><span class="glyphicon glyphicon-music"></span> Passions</h2>
+                        <div class="passion">
+                            <span class="glyphicon glyphicon-heart"></span> Sport (Course à pied, Squash, Bodyboard)
+                        </div>
+                        <div class="passion">
+                            <span class="glyphicon glyphicon-heart"></span> Informatique
+                        </div>
+                        <div class="passion">
+                            <span class="glyphicon glyphicon-heart"></span> Jeux-vidéo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </body>
 </html>
